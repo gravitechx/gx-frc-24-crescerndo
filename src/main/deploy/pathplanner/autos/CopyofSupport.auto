@@ -1,0 +1,133 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.74,
+      "y": 4.37
+    },
+    "rotation": 120.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.25
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "OnlyFeed"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopOnlyFeed"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Intake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "NewT"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopOnlyFeed"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "NewT (Reverse)"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "OnlyFeed"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.2
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "K (Alt Start)"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L (Alt End)"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Feed"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.2
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopFeed"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopShoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "NewV"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "FlipGyro"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Support Autos",
+  "choreoAuto": false
+}

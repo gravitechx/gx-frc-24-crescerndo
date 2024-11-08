@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.07,
+      "y": 5.498863634306841
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Hairpin"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ring 2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "top ring"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
