@@ -109,7 +109,7 @@ public class RobotContainer {
   }
 
   private void configureAutoCommands() {
-    NamedCommands.registerCommand("Intake", new InstantCommand(() -> intake.spin(.7)));
+    NamedCommands.registerCommand("Intake", new InstantCommand(() -> intake.spin(1)));
     NamedCommands.registerCommand("StopIntake", new InstantCommand(() -> intake.spin(0)));
     NamedCommands.registerCommand("Shoot", new InstantCommand(() -> shooter.spinOnly(.9, .9)));
     NamedCommands.registerCommand("StopShoot", new InstantCommand(() -> shooter.spinOnly(0, 0)));
@@ -191,7 +191,8 @@ public class RobotContainer {
    */
   public Command getAutonomousCommand() {
     // An example command will be run in autonomous
-    return AutoBuilder.buildAuto("Blue4NoteE");
+    // return null;
+    return AutoBuilder.buildAuto("Shoot");
     // s_Swerve.resetOdometry(PathPlannerPath.fromChoreoTrajectory("NewPath").getPreviewStartingHolonomicPose());
     // return AutoBuilder.followPath(PathPlannerPath.fromChoreoTrajectory("NewPath"));
   }
