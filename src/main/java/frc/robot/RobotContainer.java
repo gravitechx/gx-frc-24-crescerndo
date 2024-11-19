@@ -192,7 +192,7 @@ public class RobotContainer {
   public Command getAutonomousCommand() {
     // An example command will be run in autonomous
     // return null;
-    return AutoBuilder.buildAuto("Shoot");
+    return AutoBuilder.buildAuto("Blue4NoteE");
     // s_Swerve.resetOdometry(PathPlannerPath.fromChoreoTrajectory("NewPath").getPreviewStartingHolonomicPose());
     // return AutoBuilder.followPath(PathPlannerPath.fromChoreoTrajectory("NewPath"));
   }
